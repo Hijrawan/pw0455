@@ -2,26 +2,46 @@
 <html>
 <head>
 <style type="text/css">
+	body{
+		background: skyblue;
+	}
 	table{
-		font-family: arial, sans-serif;
-		border-collapse: collapse;
-		width: 100%;
+		width: 800px;
+		margin: auto;
+		text-align: center;
+		table-layout: fixed;
+		margin-top: 100px;
 	}
 
-	td, th{
-		border: 1px solid #dddddd;
-		text-align: left;
-		padding: 8px;
+	table, th, td{
+		padding: 10px;
+		color: white;
+		border: 1px solid #080808;
+		border-collapse: collapse;
+		font-size: 14px;
+		font-family: Arial;
 	}
-	tr:nth-child(even){
-		background-color: #dddddd;
-	}
+
+th{
+	font-size: 20px;
+	padding: 17px;
+}
+
+td:hover{
+	background:orange;
+	padding: 17px 20px;
+	font-size: 17px;
+}
+tr:nth-child(even){background-color:#181b2f}
+tr:nth-child(odd){background-color: #000}
+
 </style>
 	<title></title>
 </head>
-<body style="background-image: url(image/solid.jpg);">
+<body>
+	<div style="overflow-x:auto;">
 	<table>
-		<tr style="background-color:blue; color:white;">
+		<tr>
 			<th>Name</th>
 			<th>Position</th>
 			<th>Office</th>
@@ -31,7 +51,7 @@
 		</tr>
 		<tr>
 			<td>Wahyu Aji</td>
-			<td>manager</td>
+			<td>Manager</td>
 			<td>Magelang</td>
 			<td>20</td>
 			<td>2007/01/02</td>
