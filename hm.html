@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"> 
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="fa/web-fa/css/fontawesome-all.css">
+    <link rel="stylesheet" type="text/css" href="stylehome.css">
+    <script type="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script>
+      var app = angular.module("myApp",["ngRoute"]);
+      app.config(function($routerPrvider)
+      {
+        $routerPrvider
+        .when("/",{\
+          templateUrl : "main.htm"})
+      });
+    </script>
+  </head>
+
+  <body>
+  <div ng-app="myApp" class="container">
+     <div class="row">
+      <div class="col-md-12 header">
+        <h1>My First Bootstrap</h1>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="container">
+  
+  	<div class="row">
+      <div class="col-md-barinfo">
+        <p>Hanya info</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card-body miniContent">
+          <h4 class="card-title">Male</h4>
+          <p class="card-text">Some example text.Jhon Doe is an architest and enginer</p>
+          <a href="#" class="btn btn-primary">Go to</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card-body miniContent">
+          <h4 class="card-title">Female</h4>
+          <p class="card-text">Some example text.Jhon Doe is an architest and enginer</p>
+          <a href="#" class="btn btn-primary">Go to</a>
+        </div>
+
+        <div class="col-md-4">
+        <div class="card-body miniContent">
+          <h4 class="card-title">Female</h4>
+          <p class="card-text">Some example text.Jhon Doe is an architest and enginer</p>
+          <a href="#" class="btn btn-primary">Go to</a>
+        </div>
+        <i class="fas fa-home"></i>
+        <a href="#!">Home</a>
+        <a href="#!">About</a>
+      </div>
+      <ng-view></ng-view>
+    </div>
+  </body>
+</html>
